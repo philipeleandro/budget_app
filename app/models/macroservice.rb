@@ -1,0 +1,2 @@
+class Macroservice < ApplicationRecord
+end
