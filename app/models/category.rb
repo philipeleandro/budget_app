@@ -1,3 +1,3 @@
 class Category < ApplicationRecord
-  belongs_to :macroservice
+  has_many :services
 end

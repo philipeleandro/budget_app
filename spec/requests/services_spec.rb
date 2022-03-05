@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Macroservices", type: :request do
+RSpec.describe "Services", type: :request do
   describe "GET /index" do
     pending "add some examples (or delete) #{__FILE__}"
   end
