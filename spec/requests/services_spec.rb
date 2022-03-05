@@ -1,8 +1,0 @@
-rails g migration RemoveClientFromUsers client:references
-require 'rails_helper'
-
-RSpec.describe "Services", type: :request do
-  describe "GET /index" do
-    pending "add some examples (or delete) #{__FILE__}"
-  end
-end
