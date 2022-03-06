@@ -3,7 +3,7 @@ class TaskSerializer < ActiveModel::Serializer
 
   def category
     {
-      macroservice: self.object.category.name
+      macroservice: object.category.name
     }
   end
 end

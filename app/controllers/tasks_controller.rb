@@ -1,5 +1,4 @@
 class TasksController < ApplicationController
- 
   def index
     render json: Task.all, each_serializer: TaskSerializer
   end
@@ -22,9 +21,10 @@ class TasksController < ApplicationController
     task.update(task_params)
     render json: task
   end
-  
+
   private
+
   def task_params
-    params.require(:task).permit(:code,:name,:un,:value,:category_id)
+    params.require(:task).permit(:code, :name, :un, :value, :category_id)
   end
 end

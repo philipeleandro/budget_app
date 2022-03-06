@@ -7,7 +7,7 @@ class CategorysController < ApplicationController
     category = Category.create(category_params)
     render json: category
   end
-  
+
   def show
     render json: Category.find(params[:id])
   end
@@ -23,6 +23,7 @@ class CategorysController < ApplicationController
   end
 
   private
+
   def category_params
     params.require(:category).permit(:name)
   end
