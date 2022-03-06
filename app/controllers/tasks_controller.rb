@@ -1,7 +1,7 @@
 class TasksController < ApplicationController
  
   def index
-    render json: Task.all
+    render json: Task.all, each_serializer: TaskSerializer
   end
 
   def create
