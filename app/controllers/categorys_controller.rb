@@ -1,11 +1,11 @@
 class CategorysController < ApplicationController
   def index
-    render json: Category.all, each_serializer: CategorySerializer
+    render json: Category.all, status: 200
   end
 
   def create
     category = Category.create(category_params)
-    render json: category
+    render json: category, status: 201
   end
 
   def show
